@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/input.css">
+  <link rel="stylesheet" href="./css/output.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- google fonts -->
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Abanouba Yanni | Contact</title>
+</head>
+<body>
+  <header class="sticky top-0 z-50 duration-500 " id="navbar">
+    <div class="header h-20 mx-auto ">
+      <div class="flex w-full items-center max-md:justify-between justify-center gap-20 h-20 m-auto  max-xl:w-11/12 relative">
+        <div class="logo"><a href="./home.html"><img src="./images/main  logo.png" alt="" class="w-64 max-md:w-52"></a></div>
+        <div class="links "><i class="fa-solid  max-md:hidden fa-bars text-white max-md:text-3xl max-md:cursor-pointer toggler"></i>
+          <!-- start menu -->
+          <div class="menu visibleNavMenu duration-500 ">
+            <!-- start main ul -->
+            <ul class="main-ul flex md:items-center max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
+              <li class="p-5 block max-md:p-3"><a href="./home.html" class="block duration-300  text-2xl target text-white hover:text-trqLight">Home</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="./home.html#about" class="block relative duration-300 text-2xl target text-white hover:text-trqLight ">About</a></li>
+              <!-- menu -->
+              <li class="p-5 block down relative max-md:p-3 ">
+                <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-white text-2xl hover:text-trqLight ">Courses 
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 mt-3 md:left-1/2 md:-translate-x-1/2" > 
+                  <ul class="w-96 max-md:p-0 max-md:ml-3 max-md:mt-4 bg-trqLight">
+                    <li class="hover:bg-dark duration-300"><a href="./contentCreationWorkShop.html" class="block p-3 pr-10 border-b text-white ">content creation workshop</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./pianoGuitarWorkShop.html" class="block p-3 pr-10 border-b text-white ">Piano & Guitar Workshops</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./onlineCourses.html" class="block p-3 pr-10 border-b text-white ">online courses</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./vocalWorkShop.html" class="block p-3 pr-10 border-b text-white ">vocal workshop</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./dubbingAndVoiceActingWorkShop.html" class="block p-3 pr-10 border-b text-white ">Dubbing and voice acting Workshop</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./https://YanniStudio.org" class="block p-3 pr-10 text-white">studio services</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- menu -->
+              <li class="p-5 block max-md:p-3"><a href="./contact.html" class="block duration-300 text-2xl target text-white hover:text-trqLight active">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+<section class="labl bg-dark  py-10">
+<div class="secColor bg-trqLight ">
+  <div class="my-container">
+    <h1 class="py-8 text-dark font-bold text-6xl">Contact</h1>
+  </div>
+</div>
+</section>
+
+
+<section class="bg-dark pt-10 pb-10">
+  <div class="my-container">
+    <h1 class="text-trqLight text-5xl font-bold mb-8">ANY QUERIES ?</h1>
+    <div class="contact-us  flex gap-14 max-lg:flex-col max-lg:gap-4">
+      <div class="sendMessage w-2/3  max-lg:w-full">
+        <form id="contactForm" class=" felx flex-col items-center justify-center ">
+          
+          <label for="name" class="text-trqLight text-2xl font-bold  mb-2 block">Your Name:</label>
+          <input type="text" id="name" name="name" required class="w-full py-3 px-2 outline-none rounded-xl focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Name" >
+          
+          <label for="email" class="text-trqLight text-2xl font-bold mt-4 mb-2 block">Your Email:</label>
+          <input type="email" id="email" name="email" required class="w-full py-3 px-2 outline-none rounded-xl focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email">
+          
+          <label for="message" class="text-trqLight text-2xl font-bold mt-4 mb-2 block">Message:</label>
+          <textarea id="message" name="message" rows="4" required class="w-full outline-none py-3 px-2 rounded-xl focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
+          
+          <button type="submit" class="w-full mt-4 text-trqLight text-3xl font-bold border-trqLight p-3 border-2 hover:border-white rounded-xl hover:text-trqLight hover:bg-white duration-500">Send Message</button>
+        </form> 
+      </div>
+      <div class="logoAndFollowUs w-1/3 max-lg:w-full md:mt-10">
+        <p class="text-white font-semibold text-xl">
+          Contact me for questions, technical assistance, or collaboration opportunities via the contact information provided.
+        </p>
+        <div class="contact-links">
+          <div class="links flex flex-col gap-4 mt-6">
+            <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-4 text-white text-2xl duration-500 "><i class="fa-brands fa-whatsapp bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl max-md:text-xl"></i>01154423118</a>
+            <a href="mailto:yannistudio.org@gmail.com" class="flex w-fit items-center gap-4 text-white text-xl duration-500 "><i class="fa-regular fa-envelope bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl  max-md:text-xl"></i>yannistudio.org@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<footer class="" id="footer">
+  <div class="pt-10 pb-10 bg-navColor">
+    <div class="footerContent pb-8 flex my-container justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8">
+            <!-- our courses -->
+            <div class="links ourServices w-1/3 max-lg:w-full px-8">
+              <h3 class="text-trqLight text-4xl font-bold w-fit relative">USEFUL LINKS</h3>
+              <div class="courses flex flex-col pt-4">
+                <a href="./home.html#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Courses</a>
+                <a href="./about.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">About Abanoub Yanni</a>
+                <a href="./aboutYanniCourses.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">About Yanni courses</a>
+                <a href="./FAQ.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">FAQ</a>
+              </div>
+            </div>
+            <div class="w-1/3 max-lg:w-full lg:border-l lg:border-trqLight px-8">
+              <h3 class="text-trqLight text-4xl font-bold w-fit relative">SUPPORT</h3>
+              <div class="courses flex flex-col pt-8">
+                <a href="./contact.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Contact</a>
+                <a href="./technicalSupport.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Technical support</a>
+                <a href="./tetmsSndConditions.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">Terms and condition</a>
+              </div>
+            </div>
+      <!-- logo and follow us -->
+      <div class="links logoAndFollowUs w-1/3 max-lg:w-full px-8 lg:border-l lg:border-trqLight">
+        <h3 class="text-trqLight text-4xl font-bold w-fit relative ">GET IN TOUCH</h3>
+        <div class="links flex gap-2 mt-8">
+          <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="https://www.instagram.com/yannistudio_media?igsh=cWx0NDEzZHpuZXZm" class=""><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
+          <a href="https://www.youtube.com/channel/UCqK4jxift6mqtaLCrSOS5QA" class=""><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="https://www.facebook.com/YanniStudio" class=""><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="#" class=""><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
+        </div>
+        <div class="links flex flex-col gap-2 mt-6">
+          <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-2 text-white text-2xl duration-500 "><i class="fa-brands fa-whatsapp bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl max-md:text-xl"></i>01154423118</a>
+          <a href="mailto:yannistudio.org@gmail.com" class="flex w-fit items-center gap-2 text-white text-xl duration-500 "><i class="fa-regular fa-envelope bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl  max-md:text-xl"></i>yannistudio.org@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./javaScript/contact.js"></script>
+<script src="./javaScript/main.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script> -->
+
+</body>
+</html>

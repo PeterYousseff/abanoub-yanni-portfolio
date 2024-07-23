@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/input.css">
+  <link rel="stylesheet" href="./css/output.css">
+  <link rel="stylesheet" href="./css/scrollingAnimation.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- google fonts -->
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Abanouba Yanni</title>
+</head>
+<body>
+<header class="sticky top-0 z-50 duration-500 " id="navbar">
+    <div class="header h-20 mx-auto ">
+      <div class="flex w-full items-center max-md:justify-between justify-center gap-20 h-20 m-auto  max-xl:w-11/12 relative">
+        <div class="logo"><a href="./home.html"><img src="./images/main  logo.png" alt="" class="w-64"></a></div>
+        <div class="links "><i class="fa-solid  max-md:hidden fa-bars text-white max-md:text-3xl max-md:cursor-pointer toggler"></i>
+          <!-- start menu -->
+          <div class="menu visibleNavMenu duration-500 ">
+            <!-- start main ul -->
+            <ul class="main-ul flex md:items-center max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
+              <li class="p-5 block max-md:p-3"><a href="./home.html" class="block duration-300 active text-2xl target text-white hover:text-trqLight">Home</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="#about" class="block relative duration-300 text-2xl target text-white hover:text-trqLight" >About</a></li>
+              <!-- menu -->
+              <li class="p-5 block down relative max-md:p-3 ">
+                <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-white text-2xl hover:text-trqLight">Courses 
+                  <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+                <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 mt-3 md:left-1/2 md:-translate-x-1/2" > 
+                  <ul class="w-96 max-md:p-0 max-md:ml-3 max-md:mt-4 bg-trqLight">
+                    <li class="hover:bg-dark duration-300"><a href="./contentCreationWorkShop.html" class="block p-3 pr-10 border-b text-white ">content creation workshop</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./pianoGuitarWorkShop.html" class="block p-3 pr-10 border-b text-white ">Piano & Guitar Workshops</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./onlineCourses.html" class="block p-3 pr-10 border-b text-white ">online courses</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./vocalWorkShop.html" class="block p-3 pr-10 border-b text-white ">vocal workshop</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./dubbingAndVoiceActingWorkShop.html" class="block p-3 pr-10 border-b text-white ">Dubbing and voice acting Workshop</a></li>
+                    <li class="hover:bg-dark duration-300"><a href="./https://YanniStudio.org" class="block p-3 pr-10 text-white">studio services</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- menu -->
+              <li class="p-5 block max-md:p-3"><a href="./contact.html" class="block duration-300 text-2xl target text-white hover:text-trqLight">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+<div class="popup fixed bottom-0 right-0 z-50 visible-scroll-to-top " id="scroll-to-top">
+  <a href="#home"><i class="fa-solid fa-chevron-up flex items-center justify-center bg-white text-trqLight w-14 h-14 rounded-full text-4xl absolute right-0 bottom-0"></i></a>
+</div>
+
+<section class="mainSection max-md:py-32" id="home">
+  <div class="my-container">
+    <h1 class="text-5xl max-md:text-4xl font-bold text-white mb-4">Hello I'm Abanoub</h1>
+          <h2 class="text-7xl max-md:text-4xl font-bold text-trqLight">Special artist</h2>
+          <h3 class="max-md:text-2xl text-3xl font-semibold mt-8"><span class="text-trqLight">I </span><span class="typed"></span></h3>
+          <!-- <a href="#" class="main-but">My Art</a> -->
+          <div class="social-icon">
+              <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/abanobyanni_art?igsh=Znp5a2ZndW5od3A1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@abanoubyanni2315" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.facebook.com/AbanoubYanniArt" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.tiktok.com/@abanoub.yanni.art?_t=8kBF13yGLw5&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="about" id="about">
+  <div class="info my-container py-20">
+      <h3 class="text-7xl max-sm:text-5xl text-trqLight font-bold mb-10 ">Who Am I ?</h3>
+      <div class="conten flex items-center justify-center max-lg:flex-col max-lg:gap-8">
+        <div class="box image w-1/2  h-full max-lg:w-full flex items-center justify-center" data-animation="slideInRight">
+          <img class="" src="./images/about home section.png">
+        </div>
+        <div class="box w-1/2 h-full  max-lg:w-full max-lg:flex justify-center items-center flex-col" data-animation="slideInLeft" >
+          <div class="text">
+            <p class="max-lg:text-center leading-relaxed">
+              Abanob Yanni... holds a Bachelor's degree in Music Education with honors. began learning the piano at the age of 10 and started teaching 
+              piano to people of various ages at the age of 16.
+            </p>
+            <p class="max-lg:text-center leading-relaxed">
+              He learned Eastern singing through his studies with Professor Dr. Mohammed Ashraf at the Faculty of Music Education at Helwan University.
+              Later, he learned Western singing with Professor Gabriella Boda at Debrecen University in Hungary. He also studied choral conducting with
+              the opera singer and maestro Yannis ibn Abdullah
+            </p>
+            <!-- <p>
+              He further honed his musical skills by studying music composition at the Conservatoire of Music through listening lectures.
+            </p>
+            <p>
+              Abanob Yanni is an Egyptian composer who has received several awards and certificates of appreciation for creating music for
+              numerous plays and narrative films. Some of his notable works include the film "Kotar's Illusion" ,
+              the film "Lavender", and more recently, the film "Jewel's Legacy" in 2023.
+            </p>
+            <p>
+              Abanob Yanni is also the founder of Yanni Studio for recording, filming, and content creation in general.
+            </p>
+            <p>
+              He is interested in studying psychology, cognitive-behavioral therapy, behavior modification, and activities through his work at 
+              the Mental Health Hospital in Helwan, integrating artistic therapy with psychology.
+            </p>
+            <p >
+              Abanob Yanni has taught a large number of students in various fields and workshops in both artistic 
+              and psychological domains, both within and outside of Egypt.
+            </p> -->
+          </div>
+          <div class="readMore mt-8">
+            <a href="./about.html" class="text-2xl text-trqLight border p-2 rounded-lg hover:bg-trqLight hover:text-white duration-300 hover:border-trqLight">Read More ...</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="services py-32 bg-dark" id="courses">
+  <h3 class="text-7xl text-trqLight font-bold mb-20 text-center">Courses</h3>
+  <div class="row my-container ">
+    <a href="./contentCreationWorkShop.html" class="col box block w-full h-full" data-animation="zoomIn" >
+      <div class="card">
+        <div class="icon-wrapper ">
+          <img src="./images/services icon/content creation white.png" data-hover="./images/services icon/content creation.png" class="card-image absolute top-0 p-2 w-full">
+        </div>
+        <h3 class="text-2xl font-bold pt-8 text-dark text-center">Content creation workshop</h3>
+        <!-- <p>
+          Abanoub's workshops are designed to help participants learn the skills they need 
+          to create high-quality content that will engage and inform their audience. covers 
+          a wide range of topics, from the basics of content creation to more advanced techniques.
+          His workshops are suitable for both beginners and experienced content creators.
+        </p> -->
+      </div>
+    </a>
+
+    <a href="pianoGuitarWorkShop.html" class="col box" data-animation="zoomIn">
+      <div class="card" >
+        <div class="icon-wrapper">
+          <img src="./images/services icon/piano & guitar white.png" data-hover="./images/services icon/piano & guitar workshops.png" class="card-image absolute p-2 w-full">
+        </div>
+        <h3 class="text-2xl font-bold pt-8 text-dark text-center">Piano & Guitar Workshops</h3>
+        <!-- <p>
+          For over 12 years, Abanoub is nurturing creative minds, and empowering individuals 
+          through the magic of Music education and Art.
+          More than just a teacher, Abanoub is a mentor and guide to more 
+          than 6000 persons over 12 years. He fosters a supportive learning environment 
+          where anyone can explore their artistic potential, gain confidence, and hone their craft!
+        </p> -->
+      </div>
+    </a>
+  
+    <a href="onlineCourses.html" class="col box" data-animation="zoomIn">
+      <div class="card" >
+        <div class="icon-wrapper">
+          <img src="./images/services icon/online coerces white.png" data-hover="./images/services icon/online cources.png"  class="card-image absolute w-full">
+        </div>
+        <h3 class="text-2xl font-bold pt-8 text-dark text-center">Online courses</h3>
+        <!-- <p>
+          Learn at your own pace with Abanoub's comprehensive online 
+          courses in Piano, Guitar, Voiceover, Singing, Music Scales, and Video &  Audio Content.
+          Dive into a world of music education with Abanoub's library of recorded courses.
+          Explore a wide range of topics, from music theory to performance techniques,
+          all delivered in a scientific and practical way.
+        </p> -->
+      </div>
+    </a>
+
+    <a href="vocalWorkShop.html" class="col box" data-animation="zoomIn">
+      <div class="card" >
+        <div class="icon-wrapper">
+          <img src="./images/services icon/vocal workshop white.png" data-hover="./images/services icon/vocal workshop.png" class="card-image absolute w-full">
+        </div>
+        <h3 class="text-2xl font-bold pt-8 text-dark text-center">Vocal workshop</h3>
+        <!-- <p>
+          Whether you're looking to take your singing to the next level or simply want to improve your vocal skills for personal or professional reasons, Abanoub's vocal workshops are the perfect place to start.
+          In addition to group workshops, Abanoub also offers private coaching sessions.
+        </p> -->
+      </div>
+    </a>
+
+    <a href="./dubbingAndVoiceActingWorkShop.html" class="col box" data-animation="zoomIn">
+      <div class="card" >
+        <div class="icon-wrapper">
+          <img src="./images/services icon/white Voiceover.png" data-hover="./images/services icon/Voiceover.png" class="card-image absolute w-full">
+        </div>
+        <h3 class="text-2xl font-bold pt-8 text-dark text-center">Dubbing and voice acting Workshop</h3>
+        <!-- <p>
+          Whether you're looking to take your singing to the next level or simply want to improve your vocal skills for personal or professional reasons, Abanoub's vocal workshops are the perfect place to start.
+          In addition to group workshops, Abanoub also offers private coaching sessions.
+        </p> -->
+      </div>
+    </a>
+
+    <a href="https://Yannistudio.org" class="col box" data-animation="zoomIn">
+      <div class="card" >
+        <div class="icon-wrapper relative ">
+          <!-- <i class="fas fa-broom"></i> -->
+          <img src="./images/services icon/studio services white.png" data-hover="./images/services icon/studio services.png" class="card-image absolute w-full">
+        </div>
+        <h3 class="text-2xl font-bold pt-8 text-dark text-center">Studio services</h3>
+        <!-- <p>
+          I participated in doing many things, from music to montage to audio recording,
+          image editing, and holding concerts and singing.
+        </p> -->
+      </div>
+    </a>
+  </div>
+</section>
+
+
+
+
+    <!-- <iframe src="https://fm.addxt.com/form/?vf=1FAIpQLSczNyEvEMJYmglrI45ED1k_A4UeZI6it8LRqI5-B7D0E50EXA" width="1080" height="1240" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
+<footer class="" id="footer">
+  <div class="pt-10 pb-10 bg-navColor">
+    <div class="footerContent pb-8 flex my-container justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8">
+            <!-- our courses -->
+            <div class="links ourServices w-1/3 max-lg:w-full px-8">
+              <h3 class="text-trqLight text-4xl font-bold w-fit relative">USEFUL LINKS</h3>
+              <div class="courses flex flex-col pt-4">
+                <a href="#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Courses</a>
+                <a href="./about.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">About Abanoub Yanni</a>
+                <a href="./aboutYanniCourses.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">About Yanni courses</a>
+                <a href="./FAQ.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">FAQ</a>
+              </div>
+            </div>
+            <div class="w-1/3 max-lg:w-full lg:border-l lg:border-trqLight px-8">
+              <h3 class="text-trqLight text-4xl font-bold w-fit relative">SUPPORT</h3>
+              <div class="courses flex flex-col pt-8">
+                <a href="./contact.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Contact</a>
+                <a href="./technicalSupport.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Technical support</a>
+                <a href="./tetmsSndConditions.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">Terms and condition</a>
+              </div>
+            </div>
+      <!-- logo and follow us -->
+      <div class="links logoAndFollowUs w-1/3 max-lg:w-full px-8 lg:border-l lg:border-trqLight">
+        <h3 class="text-trqLight text-4xl font-bold w-fit relative ">GET IN TOUCH</h3>
+        <div class="links flex gap-2 mt-8">
+          <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="https://www.instagram.com/yannistudio_media?igsh=cWx0NDEzZHpuZXZm" class=""><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
+          <a href="https://www.youtube.com/channel/UCqK4jxift6mqtaLCrSOS5QA" class=""><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="https://www.facebook.com/YanniStudio" class=""><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="#" class=""><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
+        </div>
+        <div class="links flex flex-col gap-2 mt-6">
+          <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-2 text-white text-2xl duration-500 "><i class="fa-brands fa-whatsapp bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl max-md:text-xl"></i>01154423118</a>
+          <a href="mailto:yannistudio.org@gmail.com" class="flex w-fit items-center gap-2 text-white text-xl duration-500 "><i class="fa-regular fa-envelope bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl  max-md:text-xl"></i>yannistudio.org@gmail.com</a>
+        </div>
+      </div>
+      <!-- links and contact us -->
+      <!-- map -->
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script> -->
+<script src="./javaScript/main.js"></script>
+<script src="./javaScript/scrollAnimation.js"></script>
+<script src="./javaScript/hoverCardChangeImage.js"></script>
+
+</body>
+</html>
