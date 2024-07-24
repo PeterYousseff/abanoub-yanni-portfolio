@@ -121,7 +121,7 @@ const typed = new Typed (typedelemnt,{
         'compose music',
         'write songs',
         'am conductor',
-        'am content creation',
+        'am content creator',
         'am vocal and piano coach',
         'am yanni'
     ],

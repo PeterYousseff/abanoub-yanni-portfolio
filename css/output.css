@@ -621,6 +621,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -667,6 +672,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .block {
@@ -727,10 +736,6 @@ video {
 
 .w-64 {
   width: 16rem;
-}
-
-.w-72 {
-  width: 18rem;
 }
 
 .w-80 {
@@ -1753,14 +1758,14 @@ footer .logoAndFollowUs a:hover i {
   opacity: 1;
 }
 
-iframe {
+.googleForm  iframe{
   position: relative;
   width: 100%;
-  height: 1500px;
+  height: 1700px;
 }
 
 @media (max-width:786px) {
-  iframe {
+  .googleForm iframe {
     height: 3600px;
   }
 }
