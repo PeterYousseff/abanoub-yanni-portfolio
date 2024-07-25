@@ -25,12 +25,11 @@
             <!-- start main ul -->
             <ul class="main-ul flex md:items-center max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
               <li class="p-5 block max-md:p-3"><a href="./home.html" class="block duration-300 active text-2xl target text-white hover:text-trqLight">Home</a></li>
-              <li class="p-5 block  relative max-md:p-3"><a href="#about" class="block relative duration-300 text-2xl target text-white hover:text-trqLight" >About</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="#about" class="block relative duration-300 text-2xl target text-white hover:text-trqLight" >About Abanoub</a></li>
               <!-- menu -->
               <li class="p-5 block down relative max-md:p-3 ">
                 <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-white text-2xl hover:text-trqLight">Courses 
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
+                  <i class="fa-solid fa-chevron-down text-xs"></i></a>
                 <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 mt-3 md:left-1/2 md:-translate-x-1/2" > 
                   <ul class="w-96 max-md:p-0 max-md:ml-3 max-md:mt-4 bg-trqLight">
                     <li class="hover:bg-dark duration-300"><a href="./contentCreationWorkShop.html" class="block p-3 pr-10 border-b text-white ">content creation workshop</a></li>
@@ -44,6 +43,7 @@
               </li>
               <!-- menu -->
               <li class="p-5 block max-md:p-3"><a href="./contact.html" class="block duration-300 text-2xl target text-white hover:text-trqLight">Contact</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="./home-ar.html" class="flex gap-1 items-center relative duration-300 text-xl  target text-trqLight hover:text-trqLight"><i class="fa-solid fa-globe text-xl"></i>AR</a></li>
             </ul>
           </div>
         </div>
@@ -52,8 +52,12 @@
 </header>
 
 <div class="popup fixed bottom-0 right-0 z-50 visible-scroll-to-top " id="scroll-to-top">
-  <a href="#home"><i class="fa-solid fa-chevron-up flex items-center justify-center bg-white text-trqLight w-14 h-14 rounded-full text-4xl absolute right-0 bottom-0"></i></a>
+  <a href="#home"><i class="fa-solid fa-chevron-up flex items-center justify-center bg-white hover:text-dark duration-300 hover:bg-trqLight text-trqLight w-14 h-14 rounded-full text-4xl absolute right-0 bottom-0"></i></a>
 </div>
+
+<!-- <div class="floatingChangeLang">
+  <a href="#" class="fixed w-fit p-2 h-10 bg-white text-trqLight bottom-4 left-4 rounded-3xl duration-300 hover:text-white hover:bg-trqLight">Arabic</a>
+</div> -->
 
 <section class="mainSection max-md:py-32" id="home">
   <div class="my-container">
@@ -272,6 +276,39 @@
 <script src="./javaScript/main.js"></script>
 <script src="./javaScript/scrollAnimation.js"></script>
 <script src="./javaScript/hoverCardChangeImage.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const langSwitch = document.getElementById('lang-switch');
+  langSwitch.addEventListener('click', function (event) {
+      event.preventDefault();
+      const currentLang = document.documentElement.lang;
+      if (currentLang === 'en') {
+          window.location.href = 'home-ar.html';
+      } else {
+          window.location.href = 'home.html';
+      }
+  });
+});
+</script>
+<script>
+  const typedElement = document.querySelector('.typed');
+const typed = new Typed (typedElement,{
+    strings:
+    [
+        'compose music',
+        'write songs',
+        'am conductor',
+        'am content creator',
+        'am vocal and piano coach',
+        'am yanni'
+    ],
+    typeSpeed:100,
+    backSpeed:100,
+    loop: true,
+  loopCount: Infinity,
+})
+
+</script>
 
 </body>
 </html>

@@ -112,24 +112,6 @@ window.onscroll = function() {
 }
 
 
-const typedelemnt = document.querySelector('.typed');
-
-
-const typed = new Typed (typedelemnt,{
-    strings:
-    [
-        'compose music',
-        'write songs',
-        'am conductor',
-        'am content creator',
-        'am vocal and piano coach',
-        'am yanni'
-    ],
-    typeSpeed:100,
-    backSpeed:100,
-    loop: true,
-  loopCount: Infinity,
-})
 
 
 const cloudinary = require('cloudinary');
@@ -144,3 +126,10 @@ cloudinary.v2.config({
 cloudinary.v2.api
   .resource_by_asset_id('4c72efcb3b26695b866eb534b42e6800')
   .then(console.log)
+
+
+
+
+
+
+  

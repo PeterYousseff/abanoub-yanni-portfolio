@@ -17,7 +17,7 @@
   <header class="sticky top-0 z-50 duration-500 " id="navbar">
     <div class="header h-20 mx-auto ">
       <div class="flex w-full items-center max-md:justify-between justify-center gap-20 h-20 m-auto  max-xl:w-11/12 relative">
-        <div class="logo"><a href="./home.html"><img src="./ABANOUB.png" alt="" class="w-64 max-md:w-52"></a></div>
+        <div class="logo"><a href="./home.html"><img src="./images/main  logo.png" alt="" class="w-64 max-md:w-52"></a></div>
         <div class="links "><i class="fa-solid  max-md:hidden fa-bars text-white max-md:text-3xl max-md:cursor-pointer toggler"></i>
           <!-- start menu -->
           <div class="menu visibleNavMenu duration-500 ">
@@ -43,6 +43,7 @@
               </li>
               <!-- menu -->
               <li class="p-5 block max-md:p-3"><a href="./contact.html" class="block duration-300 text-2xl target text-white hover:text-trqLight ">Contact</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="./contentCreationWorkShop-ar.html" id="lang-switch" class="flex gap-1 items-center relative duration-300 text-xl  target text-trqLight hover:text-trqLight"><i class="fa-solid fa-globe text-xl"></i>AR</a></li>
             </ul>
           </div>
         </div>
@@ -62,8 +63,7 @@
   <div class="CoursesDesc my-container">
     <div class="content">
       <div class="text">
-        <!-- <h1 class="font-bold text-5xl mb-10 text-trqLight  max-lg:text-4xl max-lg:text-center max-md:text-3xl">Content Creation</h1> -->
-        <h2 class="text-white text-3xl mb-4 max-md:text-2xl font-bold ">Abanoub has given workshops on the following aspects of Content Creation :</h2>
+        <h2 class="text-trqLight text-3xl mb-4 max-md:text-2xl font-bold ">Abanoub has given workshops on the following aspects of Content Creation :</h2>
 
         <p class="text-white text-xl max-md:text-lg ml-10 mb-4 relative listDesc">Writing ideas: This includes brainstorming topics, coming up with creative concepts, and developing a strong narrative.</p>
         <p class="text-white text-xl max-md:text-lg ml-10 mb-4 relative listDesc">Recording sound: This includes choosing the right equipment, setting up a recording space, and capturing high-quality audio.</p>
@@ -129,9 +129,21 @@
 
 
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script> -->
 <script src="./javaScript/main.js"></script>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const langSwitch = document.getElementById('lang-switch');
+  langSwitch.addEventListener('click', function (event) {
+      event.preventDefault();
+      const currentLang = document.documentElement.lang;
+      if (currentLang === 'en') {
+          window.location.href = './contentCreationWorkShop-ar.html';
+      } else {
+          window.location.href = './contentCreationWorkShop.html';
+      }
+  });
+});
+</script>
 
 </body>
 </html>

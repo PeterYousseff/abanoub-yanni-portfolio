@@ -574,8 +574,24 @@ video {
   bottom: 0px;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.left-8 {
+  left: 2rem;
 }
 
 .right-0 {
@@ -658,6 +674,10 @@ video {
   margin-left: 2.5rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -672,10 +692,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .block {
@@ -791,6 +807,10 @@ video {
   justify-items: end;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -825,6 +845,10 @@ video {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-full {
@@ -932,6 +956,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -942,6 +970,10 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .pt-4 {
@@ -958,6 +990,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-2xl {
@@ -1048,6 +1084,7 @@ video {
   animation-name: example;
   animation-duration: 2s;
   font-family: 'poppins' , sans-serif;
+  font-family: 'cairo';
 }
 
 :root {
@@ -1064,7 +1101,7 @@ body {
   overflow-x: hidden;
 }
 
-/* google fonts */
+/* google fonts en */
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -1120,61 +1157,83 @@ body {
   font-style: normal;
 }
 
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
+/* google fonts en */
+
+/* google fonts ar */
+
+.cairo-thin {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 100;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-extralight {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 200;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-light {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-regular {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-medium {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-semibold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-bold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 700;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-extrabold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
+.cairo-black {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 900;
-  font-style: italic;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
 }
 
-/* google fonts */
+/* google fonts ar */
 
 html {
   scroll-behavior: smooth;
@@ -1298,7 +1357,32 @@ header .header .other ul li a  {
   }
 }
 
-/* other menu */
+/* change language menu */
+
+header .header .langMenu ul li a  {
+  transition: 0.5s background , color;
+}
+
+@media (max-width:786px) {
+  header .header .langMenu {
+    position: relative;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header .header .langMenu ul {
+    width: 100%;
+    margin: 0;
+  }
+
+  header .header .langMenu ul li a {
+    color: white;
+    width: 100%;
+  }
+}
+
+/* change language menu */
 
 .bgColor {
   /* background-color: #58707ae6; */
@@ -1558,13 +1642,26 @@ footer .logoAndFollowUs a:hover i {
 
 /* courses */
 
-.CoursesDesc .listDesc::before {
+.listDesc::before {
   content: '';
   position: absolute;
   width: 10px;
   height: 10px;
   background-color: var(--color);
   left:-20px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+/* arabic */
+
+.listDesc-ar::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+  right:-20px;
   top: 10px;
   border-radius: 50%;
 }
@@ -1694,7 +1791,7 @@ footer .logoAndFollowUs a:hover i {
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.5rem;
   width: 100%;
   color: var(--color);
@@ -1758,15 +1855,27 @@ footer .logoAndFollowUs a:hover i {
   opacity: 1;
 }
 
-.googleForm  iframe{
+.dubbingAndVoiceActing  iframe{
   position: relative;
   width: 100%;
-  height: 1700px;
+  height: 1400px;
 }
 
 @media (max-width:786px) {
-  .googleForm iframe {
-    height: 3600px;
+  .dubbingAndVoiceActing iframe {
+    height: 1500px;
+  }
+}
+
+.singingOnlineCourse  iframe{
+  position: relative;
+  width: 100%;
+  height: 1640px;
+}
+
+@media (max-width:786px) {
+  .singingOnlineCourse iframe {
+    height: 1500px;
   }
 }
 
@@ -1793,6 +1902,11 @@ footer .logoAndFollowUs a:hover i {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-dark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(32 44 51 / var(--tw-text-opacity));
 }
 
 .hover\:text-trqLight:hover {

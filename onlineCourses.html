@@ -43,6 +43,7 @@
               </li>
               <!-- menu -->
               <li class="p-5 block max-md:p-3"><a href="./contact.html" class="block duration-300 text-2xl target text-white hover:text-trqLight ">Contact</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="./onlineCourses-ar.html" id="lang-switch" class="flex gap-1 items-center relative duration-300 text-xl  target text-trqLight hover:text-trqLight"><i class="fa-solid fa-globe text-xl"></i>AR</a></li>
             </ul>
           </div>
         </div>
@@ -92,7 +93,7 @@
                         <p>Master the keys with Abanoub's comprehensive piano courses</p>
                     </div>
                 </div>
-                <div class="product_card--cta"><button class="btn">more information</button></div>
+                <div class="product_card--cta"><button class="btn">coming soon...</button></div>
             </div>
             <!-- guitar -->
             <div class="product_card">
@@ -109,7 +110,7 @@
                     </div>
                 </div>
         
-                <div class="product_card--cta"><button class="btn">more information</button></div>
+                <div class="product_card--cta"><button class="btn">coming soon...</button></div>
             </div>
             <!-- voiceover -->
             <div class="product_card">
@@ -126,7 +127,7 @@
                     </div>
                 </div>
         
-                <div class="product_card--cta"><button class="btn">more information</button></div>
+                <div class="product_card--cta"><button class="btn">coming soon...</button></div>
             </div>
             <!-- singing -->
             <div class="product_card">
@@ -143,7 +144,7 @@
                     </div>
                 </div>
         
-                <div class="product_card--cta"><a href="./singingOnlineCourse.html" class="btn">more information</a></div>
+                <div class="product_card--cta"><a href="./singingOnlineCourse.html" class="btn">More information</a></div>
             </div>
             <!-- Music theory & compositions  -->
             <div class="product_card">
@@ -160,7 +161,7 @@
                     </div>
                 </div>
         
-                <div class="product_card--cta"><button class="btn">more information</button></div>
+                <div class="product_card--cta"><button class="btn">coming soon...</button></div>
             </div>
             <!-- Video & Audio Content Creation  -->
             <div class="product_card">
@@ -177,7 +178,7 @@
                     </div>
                 </div>
         
-                <div class="product_card--cta"><button class="btn">more information</button></div>
+                <div class="product_card--cta"><button class="btn">coming soon...</button></div>
             </div>
         </div>
 
@@ -248,9 +249,21 @@
 
 
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script> -->
 <script src="./javaScript/main.js"></script>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const langSwitch = document.getElementById('lang-switch');
+  langSwitch.addEventListener('click', function (event) {
+      event.preventDefault();
+      const currentLang = document.documentElement.lang;
+      if (currentLang === 'en') {
+          window.location.href = './onlineCourses-ar.html';
+      } else {
+          window.location.href = './onlineCourses.html';
+      }
+  });
+});
+</script>
 
 </body>
 </html>

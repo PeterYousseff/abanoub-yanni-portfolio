@@ -23,13 +23,12 @@
           <div class="menu visibleNavMenu duration-500 ">
             <!-- start main ul -->
             <ul class="main-ul flex md:items-center max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
-              <li class="p-5 block max-md:p-3"><a href="./home.html" class="block duration-300  text-2xl target text-white hover:text-trqLight">Home</a></li>
-              <li class="p-5 block  relative max-md:p-3"><a href="#about" class="block relative duration-300 text-2xl target text-white hover:text-trqLight active" >About</a></li>
+              <li class="p-5 block max-md:p-3"><a href="./home.html" class="block duration-300 active text-2xl target text-white hover:text-trqLight">Home</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="#about" class="block relative duration-300 text-2xl target text-white hover:text-trqLight" >About Abanoub</a></li>
               <!-- menu -->
               <li class="p-5 block down relative max-md:p-3 ">
                 <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-white text-2xl hover:text-trqLight">Courses 
-                  <i class="fa-solid fa-chevron-down text-xs"></i>
-                </a>
+                  <i class="fa-solid fa-chevron-down text-xs"></i></a>
                 <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 mt-3 md:left-1/2 md:-translate-x-1/2" > 
                   <ul class="w-96 max-md:p-0 max-md:ml-3 max-md:mt-4 bg-trqLight">
                     <li class="hover:bg-dark duration-300"><a href="./contentCreationWorkShop.html" class="block p-3 pr-10 border-b text-white ">content creation workshop</a></li>
@@ -43,6 +42,7 @@
               </li>
               <!-- menu -->
               <li class="p-5 block max-md:p-3"><a href="./contact.html" class="block duration-300 text-2xl target text-white hover:text-trqLight">Contact</a></li>
+              <li class="p-5 block  relative max-md:p-3"><a href="./about-ar.html" class="flex gap-1 items-center relative duration-300 text-xl  target text-trqLight hover:text-trqLight"><i class="fa-solid fa-globe text-xl"></i>AR</a></li>
             </ul>
           </div>
         </div>
@@ -110,7 +110,7 @@
             <div class="links ourServices w-1/3 max-lg:w-full px-8">
               <h3 class="text-trqLight text-4xl font-bold w-fit relative">USEFUL LINKS</h3>
               <div class="courses flex flex-col pt-4">
-                <a href="#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Courses</a>
+                <a href="./home.html#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">Courses</a>
                 <a href="./about.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">About Abanoub Yanni</a>
                 <a href="./aboutYanniCourses.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">About Yanni courses</a>
                 <a href="./FAQ.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">FAQ</a>
@@ -140,7 +140,6 @@
         </div>
       </div>
       <!-- links and contact us -->
-      <!-- map -->
     </div>
   </div>
 </footer>
@@ -151,7 +150,20 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 <script src="./javaScript/main.js"></script>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const langSwitch = document.getElementById('lang-switch');
+  langSwitch.addEventListener('click', function (event) {
+      event.preventDefault();
+      const currentLang = document.documentElement.lang;
+      if (currentLang === 'en') {
+          window.location.href = 'home-ar.html';
+      } else {
+          window.location.href = 'home.html';
+      }
+  });
+});
+</script>
 
 </body>
 </html>
