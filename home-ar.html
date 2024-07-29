@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/input.css">
   <link rel="stylesheet" href="./css/output.css">
-  <link rel="stylesheet" href="./css/scrollingAnimation.css">
+  <!-- animation on scrolling cdn link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- google fonts -->
   <!-- google font -->
@@ -65,23 +66,23 @@
           <h3 class="max-md:text-2xl text-3xl font-semibold mt-8"><span class="text-trqLight">أنا </span><span class="typed"></span></h3>
           <!-- <a href="#" class="main-but">My Art</a> -->
           <div class="social-icon">
-              <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <!-- <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a> -->
               <a href="https://www.instagram.com/abanobyanni_art?igsh=Znp5a2ZndW5od3A1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
               <a href="https://www.youtube.com/@abanoubyanni2315" target="_blank"><i class="fa-brands fa-youtube"></i></a>
               <a href="https://www.facebook.com/AbanoubYanniArt" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.tiktok.com/@abanoub.yanni.art?_t=8kBF13yGLw5&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@abanobyanni_art?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
           </div>
   </div>
 </section>
 
 <section class="about" id="about">
   <div class="info my-container py-20">
-      <h3 class="text-7xl max-sm:text-5xl text-trqLight font-bold mb-10 ">من أنا ؟</h3>
+      <h3 class="text-7xl max-sm:text-5xl text-trqLight font-bold mb-10 " data-aos="fade-down" >من أنا ؟</h3>
       <div class="conten flex  justify-center max-lg:flex-col max-lg:gap-8">
-        <div class="box image w-1/2  h-full max-lg:w-full flex items-center justify-center" data-animation="slideInRight">
+        <div class="box image w-1/2  h-full max-lg:w-full flex items-center justify-center" data-aos="fade-left">
           <img class="" src="./images/about home section.png">
         </div>
-        <div class="box w-1/2 h-full  max-lg:w-full max-lg:flex justify-center items-center flex-col" data-animation="slideInLeft" >
+        <div class="box w-1/2 h-full  max-lg:w-full max-lg:flex justify-center items-center flex-col"  data-aos="fade-right">
           <div class="text">
             <p class="max-lg:text-center leading-relaxed">
               أبانوب يني.. حاصل على بكالوريوس تربية موسيقية بتقدير امتياز.. بدأ تعلّم البيانو بعُمر 10 سنوات، وبدأ في
@@ -102,9 +103,9 @@
 </section>
 
 <section class="services py-32 bg-dark" id="courses">
-  <h3 class="text-7xl text-trqLight font-bold mb-20 text-center">الدورات</h3>
+  <h3 class="text-7xl text-trqLight font-bold mb-20 text-center" data-aos="fade-down">الدورات</h3>
   <div class="row my-container ">
-    <a href="./contentCreationWorkShop-ar.html" class="col box block w-full h-full" data-animation="zoomIn" >
+    <a href="./contentCreationWorkShop-ar.html" class="col  block w-full h-full" data-aos="zoom-in">
       <div class="card">
         <div class="icon-wrapper ">
           <img src="./images/services icon/content creation white.png" data-hover="./images/services icon/content creation.png" class="card-image absolute top-0 p-2 w-full">
@@ -113,7 +114,7 @@
       </div>
     </a>
 
-    <a href="pianoGuitarWorkShop-ar.html" class="col box" data-animation="zoomIn">
+    <a href="pianoGuitarWorkShop-ar.html" class="col" data-aos="zoom-in">
       <div class="card" >
         <div class="icon-wrapper">
           <img src="./images/services icon/piano & guitar white.png" data-hover="./images/services icon/piano & guitar workshops.png" class="card-image absolute p-2 w-full">
@@ -122,7 +123,7 @@
       </div>
     </a>
   
-    <a href="onlineCourses-ar.html" class="col box" data-animation="zoomIn">
+    <a href="onlineCourses-ar.html" class="col" data-aos="zoom-in">
       <div class="card" >
         <div class="icon-wrapper">
           <img src="./images/services icon/online coerces white.png" data-hover="./images/services icon/online cources.png"  class="card-image absolute w-full">
@@ -131,7 +132,7 @@
       </div>
     </a>
 
-    <a href="vocalWorkShop-ar.html" class="col box" data-animation="zoomIn">
+    <a href="vocalWorkShop-ar.html" class="col" data-aos="zoom-in">
       <div class="card" >
         <div class="icon-wrapper">
           <img src="./images/services icon/vocal workshop white.png" data-hover="./images/services icon/vocal workshop.png" class="card-image absolute w-full">
@@ -140,7 +141,7 @@
       </div>
     </a>
 
-    <a href="./dubbingAndVoiceActingWorkShop-ar.html" class="col box" data-animation="zoomIn">
+    <a href="./dubbingAndVoiceActingWorkShop-ar.html" class="col" data-aos="zoom-in">
       <div class="card" >
         <div class="icon-wrapper">
           <img src="./images/services icon/white Voiceover.png" data-hover="./images/services icon/Voiceover.png" class="card-image absolute w-full">
@@ -149,7 +150,7 @@
       </div>
     </a>
 
-    <a href="https://Yannistudio.org" class="col box" data-animation="zoomIn">
+    <a href="https://Yannistudio.org" class="col" data-aos="zoom-in">
       <div class="card" >
         <div class="icon-wrapper relative ">
           <img src="./images/services icon/studio services white.png" data-hover="./images/services icon/studio services.png" class="card-image absolute w-full">
@@ -170,26 +171,26 @@
                 <a href="#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدورات</a>
                 <a href="./about.html-ar" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن أبانوب يني</a>
                 <a href="./aboutYanniCourses-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن دورات أبانوب يني</a>
-                <a href="./FAQ-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">الأسئلة الشائعة</a>
+                <!-- <a href="./FAQ-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">الأسئلة الشائعة</a> -->
               </div>
             </div>
             <div class="w-1/3 max-lg:w-full lg:border-l lg:border-trqLight px-8">
               <h3 class="text-trqLight text-4xl font-bold w-fit relative">الدعم الفني</h3>
               <div class="courses flex flex-col pt-8">
                 <a href="./contact-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">التواصل</a>
-                <a href="./technicalSupport-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدعم الفني</a>
-                <a href="./tetmsSndConditions-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">سياسة الخصوصية</a>
+                <!-- <a href="./technicalSupport-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدعم الفني</a> -->
+                <!-- <a href="./tetmsSndConditions-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">سياسة الخصوصية</a> -->
               </div>
             </div>
       <!-- logo and follow us -->
       <div class="links logoAndFollowUs w-1/3 max-lg:w-full px-8 ">
         <h3 class="text-trqLight text-4xl font-bold w-fit relative ">كن علي تواصل</h3>
         <div class="links flex gap-2 mt-8">
-          <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
-          <a href="https://www.instagram.com/yannistudio_media?igsh=cWx0NDEzZHpuZXZm" class=""><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
-          <a href="https://www.youtube.com/channel/UCqK4jxift6mqtaLCrSOS5QA" class=""><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
-          <a href="https://www.facebook.com/YanniStudio" class=""><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
-          <a href="#" class=""><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
+          <!-- <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a> -->
+          <a href="https://www.instagram.com/abanobyanni_art?igsh=Znp5a2ZndW5od3A1" class="" target="_blank"><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
+          <a href="https://www.youtube.com/@abanoubyanni2315" class="" target="_blank"><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="https://www.facebook.com/AbanoubYanniArt" class="" target="_blank"><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+          <a href="https://www.tiktok.com/@abanobyanni_art?is_from_webapp=1&sender_device=pc" class="" target="_blank"><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
         </div>
         <div class="links flex flex-col gap-2 mt-6">
           <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-2 text-white text-2xl duration-500 "><i class="fa-brands fa-whatsapp bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl max-md:text-xl"></i>01154423118</a>
@@ -203,7 +204,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 <script src="./javaScript/main.js"></script>
-<script src="./javaScript/scrollAnimation.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="./javaScript/hoverCardChangeImage.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {

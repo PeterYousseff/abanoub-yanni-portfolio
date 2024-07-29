@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/input.css">
   <link rel="stylesheet" href="./css/output.css">
-  <link rel="stylesheet" href="./css/scrollingAnimation.css">
-  <!-- font awesome -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- google fonts -->
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +85,7 @@
             <h3 class="text-trqLight text-3xl font-bold mb-8 max-md:text-2xl leading-relaxed">تغطي الدورات مجموعة واسعة من المواضيع من أجل:</h3>
             <div class="CoursesCards">
               <!-- piano -->
-              <div class="product_card">
+              <div class="product_card" data-aos="zoom-in">
                   <div class="product_card--header">
                       <div class="product_card--image"><img src="./images/online courses icon/piano.png" alt=""></div>
                       <div class="product_card--title">
@@ -100,7 +100,7 @@
                   <div class="product_card--cta"><button class="btn">قريباً...</button></div>
               </div>
               <!-- guitar -->
-              <div class="product_card">
+              <div class="product_card" data-aos="zoom-in">
                   <div class="product_card--header">
                       <div class="product_card--image"><img src="./images/online courses icon/Guitar.png" alt=""></div>
                       <div class="product_card--title">
@@ -117,7 +117,7 @@
                   <div class="product_card--cta"><button class="btn">قريباُ...</button></div>
               </div>
               <!-- voiceover -->
-              <div class="product_card">
+              <div class="product_card" data-aos="zoom-in">
                   <div class="product_card--header">
                       <div class="product_card--image"><img src="./images/online courses icon/Voiceover.png" alt=""></div>
                       <div class="product_card--title">
@@ -134,7 +134,7 @@
                   <div class="product_card--cta"><button class="btn">قريباً...</button></div>
               </div>
               <!-- singing -->
-              <div class="product_card">
+              <div class="product_card" data-aos="zoom-in">
                   <div class="product_card--header">
                       <div class="product_card--image"><img src="./images/online courses icon/Singing.png" alt=""></div>
                       <div class="product_card--title">
@@ -151,7 +151,7 @@
                   <div class="product_card--cta"><a href="./singingOnlineCourse-ar.html" class="btn">المزيد من المعلومات</a></div>
               </div>
               <!-- Music theory & compositions  -->
-              <div class="product_card">
+              <div class="product_card" data-aos="zoom-in">
                   <div class="product_card--header">
                       <div class="product_card--image"><img src="./images/online courses icon/Music theory.png" alt=""></div>
                       <div class="product_card--title">
@@ -168,7 +168,7 @@
                   <div class="product_card--cta"><button class="btn">قريبا...</button></div>
               </div>
               <!-- Video & Audio Content Creation  -->
-              <div class="product_card">
+              <div class="product_card" data-aos="zoom-in">
                   <div class="product_card--header">
                       <div class="product_card--image"><img src="./images/online courses icon/Video & Audio Content Creation.png" alt=""></div>
                       <div class="product_card--title">
@@ -209,50 +209,54 @@
 
 
 
-<footer class="" id="footer">
-  <div class="pt-10 pb-10 bg-navColor">
-    <div class="footerContent pb-8 flex my-container justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8">
-            <!-- our courses -->
-            <div class="links ourServices w-1/3 max-lg:w-full px-8 lg:border-l lg:border-trqLight">
-              <h3 class="text-trqLight text-4xl font-bold w-fit relative">روابط مفيدة</h3>
-              <div class="courses flex flex-col pt-4">
-                <a href="./home-ar.html#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدورات</a>
-                <a href="./about-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن أبانوب يني</a>
-                <a href="./aboutYanniCourses-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن دورات أبانوب يني</a>
-                <a href="./FAQ-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">الأسئلة الشائعة</a>
+  <footer class="" id="footer">
+    <div class="pt-10 pb-10 bg-navColor">
+      <div class="footerContent pb-8 flex my-container justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8">
+              <!-- our courses -->
+              <div class="links ourServices w-1/3 max-lg:w-full px-8 lg:border-l lg:border-trqLight">
+                <h3 class="text-trqLight text-4xl font-bold w-fit relative">روابط مفيدة</h3>
+                <div class="courses flex flex-col pt-4">
+                  <a href="#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدورات</a>
+                  <a href="./about.html-ar" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن أبانوب يني</a>
+                  <a href="./aboutYanniCourses-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن دورات أبانوب يني</a>
+                  <!-- <a href="./FAQ-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">الأسئلة الشائعة</a> -->
+                </div>
               </div>
-            </div>
-            <div class="w-1/3 max-lg:w-full lg:border-l lg:border-trqLight px-8">
-              <h3 class="text-trqLight text-4xl font-bold w-fit relative">الدعم الفني</h3>
-              <div class="courses flex flex-col pt-8">
-                <a href="./contact-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">التواصل</a>
-                <a href="./technicalSupport-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدعم الفني</a>
-                <a href="./tetmsSndConditions-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">سياسة الخصوصية</a>
+              <div class="w-1/3 max-lg:w-full lg:border-l lg:border-trqLight px-8">
+                <h3 class="text-trqLight text-4xl font-bold w-fit relative">الدعم الفني</h3>
+                <div class="courses flex flex-col pt-8">
+                  <a href="./contact-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">التواصل</a>
+                  <!-- <a href="./technicalSupport-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدعم الفني</a> -->
+                  <!-- <a href="./tetmsSndConditions-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">سياسة الخصوصية</a> -->
+                </div>
               </div>
-            </div>
-      <!-- logo and follow us -->
-      <div class="links logoAndFollowUs w-1/3 max-lg:w-full px-8 ">
-        <h3 class="text-trqLight text-4xl font-bold w-fit relative ">كن علي تواصل</h3>
-        <div class="links flex gap-2 mt-8">
-          <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
-          <a href="https://www.instagram.com/yannistudio_media?igsh=cWx0NDEzZHpuZXZm" class=""><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
-          <a href="https://www.youtube.com/channel/UCqK4jxift6mqtaLCrSOS5QA" class=""><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
-          <a href="https://www.facebook.com/YanniStudio" class=""><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
-          <a href="#" class=""><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
+        <!-- logo and follow us -->
+        <div class="links logoAndFollowUs w-1/3 max-lg:w-full px-8 ">
+          <h3 class="text-trqLight text-4xl font-bold w-fit relative ">كن علي تواصل</h3>
+          <div class="links flex gap-2 mt-8">
+            <!-- <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a> -->
+            <a href="https://www.instagram.com/abanobyanni_art?igsh=Znp5a2ZndW5od3A1" class="" target="_blank"><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
+            <a href="https://www.youtube.com/@abanoubyanni2315" class="" target="_blank"><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+            <a href="https://www.facebook.com/AbanoubYanniArt" class="" target="_blank"><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+            <a href="https://www.tiktok.com/@abanobyanni_art?is_from_webapp=1&sender_device=pc" class="" target="_blank"><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
+          </div>
+          <div class="links flex flex-col gap-2 mt-6">
+            <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-2 text-white text-2xl duration-500 "><i class="fa-brands fa-whatsapp bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl max-md:text-xl"></i>01154423118</a>
+            <a href="mailto:yannistudio.org@gmail.com" class="flex w-fit items-center gap-2 text-white text-xl duration-500 "><i class="fa-regular fa-envelope bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl  max-md:text-xl"></i>yannistudio.org@gmail.com</a>
+          </div>
         </div>
-        <div class="links flex flex-col gap-2 mt-6">
-          <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-2 text-white text-2xl duration-500 "><i class="fa-brands fa-whatsapp bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl max-md:text-xl"></i>01154423118</a>
-          <a href="mailto:yannistudio.org@gmail.com" class="flex w-fit items-center gap-2 text-white text-xl duration-500 "><i class="fa-regular fa-envelope bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl  max-md:text-xl"></i>yannistudio.org@gmail.com</a>
-        </div>
+        <!-- links and contact us -->
       </div>
-      <!-- links and contact us -->
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 
 <script src="./javaScript/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   const langSwitch = document.getElementById('lang-switch');
