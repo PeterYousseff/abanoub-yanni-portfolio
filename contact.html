@@ -68,17 +68,20 @@
     <h1 class="text-trqLight text-5xl font-bold mb-8">ANY QUERIES ?</h1>
     <div class="contact-us  flex gap-14 max-lg:flex-col max-lg:gap-4">
       <div class="sendMessage w-2/3  max-lg:w-full">
-        <form id="contactForm" class=" felx flex-col items-center justify-center ">
-          
+        <form id="abanoubYanniPortfolioContactForm" class=" felx flex-col items-center justify-center ">
+          <!-- name -->
           <label for="name" class="text-trqLight text-2xl font-bold  mb-2 block">Your Name:</label>
           <input type="text" id="name" name="name" required class="w-full py-3 px-2 outline-none rounded-xl focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Name" >
-          
+          <!-- email -->
           <label for="email" class="text-trqLight text-2xl font-bold mt-4 mb-2 block">Your Email:</label>
           <input type="email" id="email" name="email" required class="w-full py-3 px-2 outline-none rounded-xl focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your Email">
-          
+          <!-- subject -->
+          <label for="subject" class="text-trqLight text-2xl font-bold mt-4  mb-2 block">Subject:</label>
+          <input type="text" id="subject" name="name" required class="w-full py-3 px-2 outline-none rounded-xl focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="subject" >
+          <!-- message -->
           <label for="message" class="text-trqLight text-2xl font-bold mt-4 mb-2 block">Message:</label>
           <textarea id="message" name="message" rows="4" required class="w-full outline-none py-3 px-2 rounded-xl focus:placeholder:opacity-0 focus:placeholder:duration-500" placeholder="Your message"></textarea>
-          
+          <!-- submit -->
           <button type="submit" class="w-full mt-4 text-trqLight text-3xl font-bold border-trqLight p-3 border-2 hover:border-white rounded-xl hover:text-trqLight hover:bg-white duration-500">Send Message</button>
         </form> 
       </div>
@@ -124,7 +127,7 @@
         <h3 class="text-trqLight text-4xl font-bold w-fit relative ">GET IN TOUCH</h3>
         <div class="links flex gap-2 mt-8">
           <!-- <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a> -->
-          <a href="https://www.instagram.com/abanobyanni_art/profilecard/?igsh=Znp5a2ZndW5od3A1" class="" target="_blank"><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
+          <a href="https://www.instagram.com/abanoubyanni_art/profilecard/?igsh=Znp5a2ZndW5od3A1" class="" target="_blank"><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
           <a href="https://www.youtube.com/@Abanobyanni_art" class="" target="_blank"><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
           <a href="https://www.facebook.com/AbanoubYanniArt" class="" target="_blank"><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
           <a href="https://www.tiktok.com/@abanobyanni_art?is_from_webapp=1&sender_device=pc" class="" target="_blank"><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
@@ -143,8 +146,7 @@
 
 
 
-
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="./javaScript/contact.js"></script>
 <script src="./javaScript/main.js"></script>
 <script>
