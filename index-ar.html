@@ -15,7 +15,256 @@
         <!-- website icon -->
         <link rel="icon" href="./images/faveiconj.png"/>
         <!-- website icon -->
-  <title>Abanoub Yanni</title>
+  <title>Abanoub Yanni<!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/input.css">
+      <link rel="stylesheet" href="./css/output.css">
+      <!-- animation on scrolling cdn link -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- google fonts -->
+      <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+            <!-- website icon -->
+            <link rel="icon" href="./images/faveiconj.png"/>
+            <!-- website icon -->
+      <title>Abanoub Yanni</title>
+    </head>
+    <body>
+    <header class="sticky top-0 z-50 duration-500 " id="navbar">
+        <div class="header h-20 mx-auto ">
+          <div class="flex w-full items-center max-md:justify-between justify-center gap-20 h-20 m-auto  max-xl:w-11/12 relative">
+            <div class="logo"><a href="./home-ar.html"><img src="./images/main  logo.png" alt="" class="w-64"></a></div>
+            <div class="links "><i class="fa-solid  max-md:hidden fa-bars text-white max-md:text-3xl max-md:cursor-pointer toggler"></i>
+              <!-- start menu -->
+              <div class="menu visibleNavMenu duration-500 ">
+                <!-- start main ul -->
+                <ul class="main-ul flex md:items-center max-md:flex-col max-md:absolute max-md:left-0 max-md:mt-6">
+                  <li class="p-5 block max-md:p-3"><a href="./home-ar.html" class="block duration-300 active text-2xl target text-white hover:text-trqLight">الرئيسية</a></li>
+                  <li class="p-5 block  relative max-md:p-3"><a href="#about" class="block relative duration-300 text-nowrap text-2xl target text-white hover:text-trqLight">عن أبانوب</a></li>
+                  <li class="p-5 block  relative max-md:p-3"><a href="./aboutYanniCourses-ar.html" class="block relative duration-300 text-nowrap text-2xl target text-white hover:text-trqLight">عن الدورات</a></li>
+                  <!-- menu -->
+                  <li class="p-5 block down relative max-md:p-3 ">
+                    <a id="aMenu" class="cursor-pointer items-center group flex gap-2 relative duration-300 text-white text-2xl hover:text-trqLight">الدورات 
+                      <i class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <div id="other" class="other removeMenu absolute max-md:left-16 max-md:top-0 max-md:mt-0 mt-3 md:left-1/2 md:-translate-x-1/2" > 
+                      <ul class="w-96 max-md:p-0 max-md:ml-3 max-md:mt-4 bg-trqLight">
+                        <li class="hover:bg-dark duration-300"><a href="./contentCreationWorkShop-ar.html" class="block p-3 px-10 border-b text-white ">ورشة صناعة المحتوى</a></li>
+                        <li class="hover:bg-dark duration-300"><a href="./pianoGuitarWorkShop-ar.html" class="block p-3 px-10 border-b text-white ">ورشة البيانو والجيتار</a></li>
+                        <li class="hover:bg-dark duration-300"><a href="./onlineCourses-ar.html" class="block p-3 px-10 border-b text-white ">دورات اونلاين</a></li>
+                        <li class="hover:bg-dark duration-300"><a href="./vocalWorkShop-ar.html" class="block p-3 px-10 border-b text-white ">ورشة الصوتيات</a></li>
+                        <li class="hover:bg-dark duration-300"><a href="./dubbingAndVoiceActingWorkShop-ar.html" class="block p-3 px-10 border-b text-white ">ورشة الدوبلاج والتمثيل الصوتي</a></li>
+                        <li class="hover:bg-dark duration-300"><a href="https://yannistudio.com" class="block p-3 px-10 text-white">خدمات الأستوديو</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- menu -->
+                  <li class="p-5 block max-md:p-3"><a href="./contact-ar.html" class="block duration-300 text-2xl target text-white hover:text-trqLight">تواصل</a></li>
+                  <li class="p-5 block  relative max-md:p-3"><a href="./home.html" id="lang-switch" class="flex gap-1 items-center relative duration-300 text-xl  target text-trqLight hover:text-trqLight"><i class="fa-solid fa-globe text-xl"></i>EN</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <!-- scroll to top -->
+    <div class="popup fixed bottom-0 right-0 z-50 visible-scroll-to-top " id="scroll-to-top">
+      <a href="#home"><i class="fa-solid fa-chevron-up flex items-center justify-center bg-white hover:text-dark duration-300 hover:bg-trqLight text-trqLight w-14 h-14 rounded-full text-4xl absolute right-0 bottom-0"></i></a>
+    </div>
+    <!-- scroll to top -->
+    
+    <section class="mainSection max-md:py-32" id="home">
+      <div class="my-container">
+        <h1 class="text-5xl max-md:text-4xl font-bold text-white mb-4">أهلاً أنا أبانوب</h1>
+              <h2 class="text-7xl max-md:text-4xl font-bold text-trqLight">فنان مختلف</h2>
+              <h3 class="max-md:text-2xl text-3xl font-semibold mt-8"><span class="text-trqLight">أنا </span><span class="typed"></span></h3>
+              <!-- <a href="#" class="main-but">My Art</a> -->
+              <div class="social-icon">
+                  <!-- <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a> -->
+                  <a href="https://www.instagram.com/abanoubyanni_art/profilecard/?igsh=Znp5a2ZndW5od3A1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/@Abanobyanni_art" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="https://www.facebook.com/AbanoubYanniArt" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.tiktok.com/@abanobyanni_art?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+      </div>
+    </section>
+    
+    <section class="about" id="about">
+      <div class="info my-container py-20">
+          <h3 class="text-7xl max-sm:text-5xl text-trqLight font-bold mb-10 " data-aos="fade-down" >من أنا ؟</h3>
+          <div class="conten flex  justify-center max-lg:flex-col max-lg:gap-8">
+            <div class="box image w-1/2  h-full max-lg:w-full flex items-center justify-center" data-aos="fade-left">
+              <img class="" src="./images/about home section.png">
+            </div>
+            <div class="box w-1/2 h-full  max-lg:w-full max-lg:flex justify-center items-center flex-col"  data-aos="fade-right">
+              <div class="text">
+                <p class="max-lg:text-center leading-relaxed">
+                  أبانوب يني.. حاصل على بكالوريوس تربية موسيقية بتقدير امتياز.. بدأ تعلّم البيانو بعُمر 10 سنوات، وبدأ في
+                  تعليمه العزف على آلة البيانو لمختلف الأعمار بعُمر 16 عامًا، وقام بتعلّم الغناء الشرقي من خلال دراسته مع الأستاذ الدكتور (محمد أشرف) الأستاذ بكلية التربية الموسيقية بجامعة حلوان، ثم تعلّم الغناء الغربي مع بروفيسور (غابريلا بودا) بجامعة دبرتسن المجرية، ثم درس قيادة الكورال مع المغنّي الأوبرالي والمايسترو (يانيس بن عبدالله)، ثم أثقل مهاراته الموسيقية بدراسة التأليف الموسيقي فى معهد الموسيقى الكونسرفاتوار من خلال محاضرات الاستماع.
+                </p>
+                <p class="max-lg:text-center leading-relaxed">
+                  أبانوب يني.. هو مؤلف موسيقي مصري حاصل على عدة جوائز وشهادات تقدير؛ لقيامه بصنع الموسيقى لعدد كبير من المسرحيات والأفلام الروائية، أهمها: فيلم "وَهم كوتار" ، و فيلم "لافندر" ، ومؤخرًا فيلم "تركة جوهر" عام 2023.
+                  أبانوب يني هو أيضا مؤسس ستوديو doo للتسجيل والتصوير وصناعة المحتوى بشكل عام.. مهتم بدراسة علم النفس، والعلاج المعرفي السلوكي، وتعديل السلوك، والأنشطة من خلال عمله بداخل مستشفى الصحة النفسية بحلوان لدمج العلاج النفسي بالفن.
+                  أبانوب يني .. قام بتدريس لعدد كبير جداً من الطلاب فى مختلف المجالات والورش فى المجالات الفنية والنفسية بداخل وخارج مصر ..
+                </p>
+              </div>
+              <div class="readMore mt-8">
+                <a href="./about-ar.html" class="text-2xl text-trqLight border p-2 rounded-lg hover:bg-trqLight hover:text-white duration-300 hover:border-trqLight">قراءة المزيد ...</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    <section class="services py-32 bg-dark" id="courses">
+      <h3 class="text-7xl text-trqLight font-bold mb-20 text-center" data-aos="fade-down">الدورات</h3>
+      <div class="row my-container ">
+        <a href="./contentCreationWorkShop-ar.html" class="col  block w-full h-full" data-aos="zoom-in">
+          <div class="card">
+            <div class="icon-wrapper ">
+              <img src="./images/services icon/content creation white.png" data-hover="./images/services icon/content creation.png" class="card-image absolute top-0 p-2 w-full">
+            </div>
+            <h3 class="text-2xl font-bold pt-8 text-dark text-center">ورشة صناعة المحتوى</h3>
+          </div>
+        </a>
+    
+        <a href="pianoGuitarWorkShop-ar.html" class="col" data-aos="zoom-in">
+          <div class="card" >
+            <div class="icon-wrapper">
+              <img src="./images/services icon/piano & guitar white.png" data-hover="./images/services icon/piano & guitar workshops.png" class="card-image absolute p-2 w-full">
+            </div>
+            <h3 class="text-2xl font-bold pt-8 text-dark text-center">ورشة البيانو والجيتار</h3>
+          </div>
+        </a>
+      
+        <a href="onlineCourses-ar.html" class="col" data-aos="zoom-in">
+          <div class="card" >
+            <div class="icon-wrapper">
+              <img src="./images/services icon/online coerces white.png" data-hover="./images/services icon/online cources.png"  class="card-image absolute w-full">
+            </div>
+            <h3 class="text-2xl font-bold pt-8 text-dark text-center">دورات اونلاين</h3>
+          </div>
+        </a>
+    
+        <a href="vocalWorkShop-ar.html" class="col" data-aos="zoom-in">
+          <div class="card" >
+            <div class="icon-wrapper">
+              <img src="./images/services icon/vocal workshop white.png" data-hover="./images/services icon/vocal workshop.png" class="card-image absolute w-full">
+            </div>
+            <h3 class="text-2xl font-bold pt-8 text-dark text-center">ورشة الصوتيات</h3>
+          </div>
+        </a>
+    
+        <a href="./dubbingAndVoiceActingWorkShop-ar.html" class="col" data-aos="zoom-in">
+          <div class="card" >
+            <div class="icon-wrapper">
+              <img src="./images/services icon/white Voiceover.png" data-hover="./images/services icon/Voiceover.png" class="card-image absolute w-full">
+            </div>
+            <h3 class="text-2xl font-bold pt-8 text-dark text-center">ورشة الدوبلاج والتمثيل الصوتي</h3>
+          </div>
+        </a>
+    
+        <a href="https://www.yannistudio.com" class="col" data-aos="zoom-in">
+          <div class="card" >
+            <div class="icon-wrapper relative ">
+              <img src="./images/services icon/studio services white.png" data-hover="./images/services icon/studio services.png" class="card-image absolute w-full">
+            </div>
+            <h3 class="text-2xl font-bold pt-8 text-dark text-center">خدمات الأستوديو</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <footer class="" id="footer">
+      <div class="pt-10 pb-10 bg-navColor">
+        <div class="footerContent pb-8 flex my-container justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:gap-8">
+                <!-- our courses -->
+                <div class="links ourServices w-1/3 max-lg:w-full px-8 lg:border-l lg:border-trqLight">
+                  <h3 class="text-trqLight text-4xl font-bold w-fit relative">روابط مفيدة</h3>
+                  <div class="courses flex flex-col pt-4">
+                    <a href="#courses" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدورات</a>
+                    <a href="./about.html-ar" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن أبانوب يني</a>
+                    <a href="./aboutYanniCourses-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">عن دورات أبانوب يني</a>
+                    <!-- <a href="./FAQ-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">الأسئلة الشائعة</a> -->
+                  </div>
+                </div>
+                <div class="w-1/3 max-lg:w-full lg:border-l lg:border-trqLight px-8">
+                  <h3 class="text-trqLight text-4xl font-bold w-fit relative">الدعم الفني</h3>
+                  <div class="courses flex flex-col pt-8">
+                    <a href="./contact-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">التواصل</a>
+                    <!-- <a href="./technicalSupport-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 mb-4 w-fit max-md:text-xl">الدعم الفني</a> -->
+                    <!-- <a href="./tetmsSndConditions-ar.html" class="text-white hover:text-trqLight text-2xl duration-500 w-fit max-md:text-xl">سياسة الخصوصية</a> -->
+                  </div>
+                </div>
+          <!-- logo and follow us -->
+          <div class="links logoAndFollowUs w-1/3 max-lg:w-full px-8 ">
+            <h3 class="text-trqLight text-4xl font-bold w-fit relative ">كن علي تواصل</h3>
+            <div class="links flex gap-2 mt-8">
+              <!-- <a href="#" class=""><i class="fa-brands fa-linkedin text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a> -->
+              <a href="https://www.instagram.com/abanoubyanni_art/profilecard/?igsh=Znp5a2ZndW5od3A1" class="" target="_blank"><i class="fa-brands fa-instagram text-2xl bg-white text-trqLight w-10 h-10 rounded-full flex "></i></a>
+              <a href="https://www.youtube.com/@Abanobyanni_art" class="" target="_blank"><i class="fa-brands fa-youtube text-2xl  w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+              <a href="https://www.facebook.com/AbanoubYanniArt" class="" target="_blank"><i class="fa-brands fa-facebook text-2xl w-10 h-10 rounded-full flex bg-white text-trqLight"></i></a>
+              <a href="https://www.tiktok.com/@abanobyanni_art?is_from_webapp=1&sender_device=pc" class="" target="_blank"><i class="fa-brands fa-tiktok text-2xl bg-white text-trqLight  w-10 h-10 rounded-full flex "></i></a>
+            </div>
+            <div class="links flex flex-col gap-2 mt-6">
+              <a href="https://wa.me/201154423118" class="flex w-fit items-center gap-2 text-white text-2xl duration-500 "><i class="fa-brands fa-whatsapp bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl max-md:text-xl"></i>01154423118</a>
+              <a href="mailto:abanoubyannitut@gmail.com" class="flex w-fit items-center gap-2 text-white text-xl duration-500 "><i class="fa-regular fa-envelope bg-white text-trqLight w-10 h-10 rounded-full flex text-2xl  max-md:text-xl"></i>abanoubyannitut@gmail.com</a>
+            </div>
+          </div>
+          <!-- links and contact us -->
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="./javaScript/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./javaScript/hoverCardChangeImage.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      const langSwitch = document.getElementById('lang-switch');
+      langSwitch.addEventListener('click', function (event) {
+          event.preventDefault();
+          const currentLang = document.documentElement.lang;
+          if (currentLang === 'en') {
+              window.location.href = 'home-ar.html';
+          } else {
+              window.location.href = 'home.html';
+          }
+      });
+    });
+    </script>
+    <script>
+    const typedElement = document.querySelector('.typed');
+    
+    const typed = new Typed (typedElement,{
+        strings:
+        [
+            'مؤلف موسيقي',
+            'كاتب اغاني',
+            'مايسترو',
+            'صانع محتوي',
+            'مدرب صوت وبيانو',
+            'يني'
+        ],
+        typeSpeed:100,
+        backSpeed:100,
+        loop: true,
+      loopCount: Infinity,
+    })
+    </script>
+    
+    </body>
+    </html></title>
 </head>
 <body class="bg-dark">
   <section>
